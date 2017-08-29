@@ -42,6 +42,7 @@ function GetSum2(a,b)
 
 // 1--------------------------------------------
 
+
 // 2--------------------------------------------
 function songDecoder(song) {
   //create a new array by splitting string every time wub appears
@@ -55,9 +56,6 @@ function songDecoder(song) {
   let songString = splitSong.join(" ");
   return songString;
 }
-
-songDecoder("AWUBWUBWUBBWUBWUBWUBC");
-
 
 // better solutions
 function songDecoder1(song){
