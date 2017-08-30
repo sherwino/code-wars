@@ -3,11 +3,11 @@ Keeping a log of all of my codewars.com responses.
 To keep track of some of the progress I have made over time.
 
 # JavaScript
-## Here are all of the JavaScript related problems I have solved at [codewars.com]
+## Here are all of the JavaScript related problems I have solved at (codewars.com)
 
 1. Given two integers, which can be positive and negative, find the sum of all the numbers between including them too and return it. If both numbers are equal return a or b.
 
-  Note! a and b are not ordered!
+Note! a and b are not ordered!
 
 ### Examples/Tests:
 ```
@@ -40,4 +40,17 @@ GetSum(-1, 2) == 2  // -1 + 0 + 1 + 2 = 2
 ```
 songDecoder("WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB")
   // =>  WE ARE THE CHAMPIONS MY FRIEND
+```
+
+3. You live in the city of Cartesia where all roads are laid out in a perfect grid. You arrived ten minutes too early to an appointment, so you decided to take the opportunity to go for a short walk. The city provides its citizens with a Walk Generating App on their phones -- everytime you press the button it sends you an array of one-letter strings representing directions to walk (eg. ['n', 's', 'w', 'e']). You know it takes you one minute to traverse one city block, so create a function that will return true if the walk the app gives you will take you exactly ten minutes (you don't want to be early or late!) and will, of course, return you to your starting point. Return false otherwise.
+
+Note: you will always receive a valid array containing a random assortment of direction letters ('n', 's', 'e', or 'w' only). It will never give you an empty array (that's not a walk, that's standing still!)
+
+### Examples/Tests:
+```
+Test.expect(isValidWalk(['n','s','n','s','n','s','n','s','n','s']), 'should return true');
+Test.expect(!isValidWalk(['w','e','w','e','w','e','w','e','w','e','w','e']), 'should return false');
+Test.expect(!isValidWalk(['w']), 'should return false');
+Test.expect(!isValidWalk(['n','n','n','s','n','s','n','s','n','s']), 'should return false');
+
 ```
